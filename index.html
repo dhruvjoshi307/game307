@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>🏴Pirates & Flags</title>
+        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+<script src="https://dl.dropbox.com/s/bx8mo05cdrnbrfu/encr_flag_foat_game.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id = "content">
+  <div id = "load">
+    <h1>Loading...</h1>
+    <p>Tip: Make sure you always select the right flag</p>
+  </div>
+  <div id = "player_select">
+    <h1>Chose your player</h1>
+    <input type="text" placeholder = "Your Name" id = "pl_name">
+    <div id = "r"></div>
+    <div id = "g"></div>
+    <div id = "p"></div>
+    <div id = "y"></div>
+  </div>
+  <div id = "scoreboard">
+    <div id = "boards">
+      <div id = "file">
+      <!--Here is the scoreboard-->
+      </div>
+    </div>
+  </div>
+  <div id = "page">
+    <div id = "score"><span id = "scoreText">SCORE: 0 </span><i class='fas fa-flag'></i></div>
+    <div id = "settings">
+      <i class='fas fa-info-circle' onclick = "infos()"></i>
+      <i class='fas fa-stopwatch' id = "stop"></i>
+      <i class='fas fa-music' onclick = "toggle_play()"></i>
+      <i class='fas fa-clipboard-list' id = "pl_list"></i>
+    </div>
+  </div>
+  
+  <div id = "buttons">
+    <div class = "robot_name" id = "ro1"></div>
+    <div class = "robot_name" id = "ro2"></div>
+    <div class = "robot_name" id = "ro3"></div>
+    <div class = "robot_name" id = "ro4"></div>
+    <img class = "boat" id = "b1" src = "https://imgur.com/LLDnTfE.jpg"></img>
+    <img class = "boat" id = "b2" src = "https://imgur.com/93MZ1Cg.jpg"></img>
+    <img class = "boat" id = "b3" src = "https://imgur.com/mLk1Cp3.jpg"></img>
+    <img class = "boat" id = "b4" src = "https://imgur.com/m6B7OUC.jpg"></img>
+    
+    <div class = "amogus">
+      <div id = "red-flag" class = "flag"></div>
+      <div id = "white-flag" class = "flag"></div>
+    </div>
+    <div id = "main-boat"></div>
+  </div>
+  <div id = "white_button">BLACK FLAG</div>
+  <div id = "red_button">RED FLAG</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

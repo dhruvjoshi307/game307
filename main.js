@@ -1,0 +1,1 @@
+alert("Please make sure you are playing this game in mobile beacause the some of the characters are not supported in Pc");
